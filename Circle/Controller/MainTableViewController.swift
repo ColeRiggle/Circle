@@ -16,8 +16,9 @@ class MainTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.register(MainTableViewCell.self, forCellReuseIdentifier: cellId)
+        tableView.contentInset = .init(top: 30, left: 0, bottom: 0, right: 0)
+        tableView.separatorStyle = .none
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! MainTableViewCell
@@ -32,5 +33,13 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         5
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+    
+    // MARK: Visual
+    
+    
     
 }

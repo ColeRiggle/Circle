@@ -25,8 +25,16 @@ class MainTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        addSubview(icon)
-        addSubview(label)
+        backgroundColor = .systemGray6
+        
+        let stackView = UIStackView(arrangedSubviews: [icon, label])
+        
+        icon.widthAnchor.constraint(equalToConstant: 10).isActive = true
+        
+        stackView.fillSuperview()
+        
+        addSubview(stackView)
+        
     }
     
     required init?(coder: NSCoder) {
