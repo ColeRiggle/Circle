@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         self.window = UIWindow(windowScene: windowScene)
         
-        window?.rootViewController = BaseTabBarController()
+        window?.rootViewController = MainNavigationController()
         
     }
 
