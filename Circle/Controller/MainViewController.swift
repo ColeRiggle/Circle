@@ -17,7 +17,7 @@ class MainViewController: UIViewController {
         
         view.backgroundColor = .white
         
-        let verticalStackView = VerticalStackView(arrangedSubviews: [whatsUpLabel, secondaryLabel], spacing: 30)
+        let verticalStackView = VerticalStackView(arrangedSubviews: [whatsUpLabel, secondaryLabel], spacing: 10)
         view.addSubview(verticalStackView)
         verticalStackView.fillSuperview()
         
