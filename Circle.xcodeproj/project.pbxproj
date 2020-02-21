@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D670D82F23FF5E23001342BA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D670D82C23FF5E23001342BA /* Extensions.swift */; };
+		D670D83023FF5E23001342BA /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D670D82D23FF5E23001342BA /* UIView+Layout.swift */; };
+		D670D83123FF5E23001342BA /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D670D82E23FF5E23001342BA /* VerticalStackView.swift */; };
+		D670D83623FF5F94001342BA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D670D83523FF5F94001342BA /* MainViewController.swift */; };
 		D685C22C23F626FC0021A444 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685C22B23F626FC0021A444 /* AppDelegate.swift */; };
 		D685C22E23F626FC0021A444 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685C22D23F626FC0021A444 /* SceneDelegate.swift */; };
-		D685C23023F626FC0021A444 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685C22F23F626FC0021A444 /* ViewController.swift */; };
 		D685C23323F626FC0021A444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D685C23123F626FC0021A444 /* Main.storyboard */; };
 		D685C23523F626FE0021A444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D685C23423F626FE0021A444 /* Assets.xcassets */; };
 		D685C23823F626FE0021A444 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D685C23623F626FE0021A444 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D670D82C23FF5E23001342BA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D670D82D23FF5E23001342BA /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		D670D82E23FF5E23001342BA /* VerticalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
+		D670D83523FF5F94001342BA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D685C22823F626FC0021A444 /* Circle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Circle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D685C22B23F626FC0021A444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D685C22D23F626FC0021A444 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D685C22F23F626FC0021A444 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D685C23223F626FC0021A444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D685C23423F626FE0021A444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D685C23723F626FE0021A444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D670D82923FF5C3F001342BA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D670D82A23FF5C47001342BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D670D82B23FF5E06001342BA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D670D82C23FF5E23001342BA /* Extensions.swift */,
+				D670D82D23FF5E23001342BA /* UIView+Layout.swift */,
+				D670D82E23FF5E23001342BA /* VerticalStackView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D670D83223FF5EAC001342BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D670D83523FF5F94001342BA /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D670D83323FF5EEC001342BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D670D83423FF5F39001342BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D685C21F23F626FC0021A444 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +108,14 @@
 		D685C22A23F626FC0021A444 /* Circle */ = {
 			isa = PBXGroup;
 			children = (
+				D670D82B23FF5E06001342BA /* Helpers */,
+				D670D82A23FF5C47001342BA /* Resources */,
+				D670D82923FF5C3F001342BA /* Utilities */,
+				D670D83423FF5F39001342BA /* Model */,
+				D670D83323FF5EEC001342BA /* Views */,
+				D670D83223FF5EAC001342BA /* Controller */,
 				D685C22B23F626FC0021A444 /* AppDelegate.swift */,
 				D685C22D23F626FC0021A444 /* SceneDelegate.swift */,
-				D685C22F23F626FC0021A444 /* ViewController.swift */,
 				D685C23123F626FC0021A444 /* Main.storyboard */,
 				D685C23423F626FE0021A444 /* Assets.xcassets */,
 				D685C23623F626FE0021A444 /* LaunchScreen.storyboard */,
@@ -138,9 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D685C23023F626FC0021A444 /* ViewController.swift in Sources */,
+				D670D83023FF5E23001342BA /* UIView+Layout.swift in Sources */,
 				D685C22C23F626FC0021A444 /* AppDelegate.swift in Sources */,
+				D670D82F23FF5E23001342BA /* Extensions.swift in Sources */,
+				D670D83623FF5F94001342BA /* MainViewController.swift in Sources */,
 				D685C22E23F626FC0021A444 /* SceneDelegate.swift in Sources */,
+				D670D83123FF5E23001342BA /* VerticalStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
